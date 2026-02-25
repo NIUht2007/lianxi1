@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "游戏即将开始！", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this,MainActivity2::class.java))
             // 这里可以添加跳转到游戏页面的逻辑
+            // 22222
         }
     }
 }
