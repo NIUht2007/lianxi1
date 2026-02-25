@@ -26,4 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onResume() {
+        super.onResume()
+        // 添加游戏开始时需要的逻辑
+    }
 }
