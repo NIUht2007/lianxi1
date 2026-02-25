@@ -24,5 +24,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,MainActivity::class.java))
             // 这里可以添加跳转到游戏页面的逻辑
         }
+
     }
 }
