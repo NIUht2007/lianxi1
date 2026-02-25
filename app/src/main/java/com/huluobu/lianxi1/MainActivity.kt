@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         val startButton: Button = findViewById(R.id.start_button)
         startButton.setOnClickListener {
-            Toast.makeText(this, "游戏即将开始！", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,MainActivity2::class.java))
+            Toast.makeText(this, "游戏即将开始112233！", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,MainActivity::class.java))
             // 这里可以添加跳转到游戏页面的逻辑
         }
     }
