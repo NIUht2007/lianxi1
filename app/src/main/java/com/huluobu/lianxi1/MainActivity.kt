@@ -35,5 +35,7 @@ class MainActivity : AppCompatActivity() {
             // 跳转到MainActivity2
             startActivity(Intent(this, MainActivity2::class.java))
         }
+
+        println(111)
     }
 }
