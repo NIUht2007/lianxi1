@@ -20,8 +20,8 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activitgit add .y_main2)
-        
+        setContentView(R.layout.activity_main2)
+
         // 初始化ViewModel
         gameViewModel = ViewModelProvider(this).get(GameViewModel::class.java)
         
