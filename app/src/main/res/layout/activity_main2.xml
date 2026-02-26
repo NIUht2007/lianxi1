@@ -6,11 +6,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
 
     <TextView
+        android:id="@+id/game_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="我叫牛涛11"/>
+        android:text="游戏已开始，祝你好运！"
+        android:textSize="24sp"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分数: 0"
+        android:textSize="32sp"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/add_score"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="增加分数"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"/>
 
 </LinearLayout>
