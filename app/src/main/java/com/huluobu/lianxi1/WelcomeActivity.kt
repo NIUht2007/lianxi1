@@ -10,13 +10,13 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.huluobu.lianxi1.viewmodel.GameViewModel
 
-class MainActivity : AppCompatActivity() {
+class WelcomeActivity : AppCompatActivity() {
     
     private lateinit var gameViewModel: GameViewModel
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_welcome)
         
         // 初始化ViewModel
         gameViewModel = ViewModelProvider(this).get(GameViewModel::class.java)
@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             // 开始游戏
             gameViewModel.startGame()
             Toast.makeText(this, "游戏即将开始112233！", Toast.LENGTH_SHORT).show()
-            // 跳转到MainActivity2
-            startActivity(Intent(this, MainActivity2::class.java))
+            // 跳转到GameActivity
+            startActivity(Intent(this, GameActivity::class.java))
         }
 
         println(111)

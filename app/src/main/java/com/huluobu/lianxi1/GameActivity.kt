@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.huluobu.lianxi1.viewmodel.GameViewModel
 
-class MainActivity2 : AppCompatActivity() {
+class GameActivity : AppCompatActivity() {
     
     private lateinit var gameViewModel: GameViewModel
     private lateinit var gameStatusTextView: TextView
@@ -20,8 +20,8 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main2)
-
+        setContentView(R.layout.activity_game)
+        
         // 初始化ViewModel
         gameViewModel = ViewModelProvider(this).get(GameViewModel::class.java)
         
@@ -46,6 +46,5 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //klsxhckjxzhkhjxczhjkzxchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzchjxzch
     }
 }
